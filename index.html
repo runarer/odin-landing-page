@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
     <title>Landing Page</title>
 </head>
 <body>
-    <div class="header">
-        Header Logo
-        <ul class="header-list">
-            <li class="header-link"><a href="#">header link one</a></li>
-            <li class="header-link"><a href="#">header link one</a></li>
-            <li class="header-link"><a href="#">header link one</a></li>
-        </ul>
-    </div>
-    <div class="hero">
-        <div class="hero-left">
-            <h1>This website is awesome</h1>
-            This website has some subtext that goes here under the main title. It's a smaller font and the colour is lower contrast
-            <button id="hero-button">Sign Up</button>
-        </div>
-        <img src="./images/awesome.png" alt="I cant rememeber the img tag attribute.">
-    </div>
-    <div class="information">
-        <div class="info-headline">Some random information.</div>
-        <div class="info-deck">
-            <div class="info-card"><img src="./images/card1.png" alt="A small image of something important">  this is some subtext under an illustration or image</div>
-            <div class="info-card"><img src="./images/card2.png" alt="A small image of something important">  this is some subtext under an illustration or image</div>
-            <div class="info-card"><img src="./images/card3.png" alt="A small image of something important">  this is some subtext under an illustration or image</div>
-            <div class="info-card"><img src="./images/card4.png" alt="A small image of something important">  this is some subtext under an illustration or image</div>
+    <div class="background-dark background">
+        <div class="content-box header-box">
+            <div class="header-logo">Header Logo</div>
+            <ul class="header-list">
+                <li><a class="header-link" href="#">Header link one</a></li>
+                <li><a class="header-link" href="#">Header link two</a></li>
+                <li><a class="header-link" href="#">Header link three</a></li>
+            </ul>
         </div>
     </div>
-    <div class="testimony">
-        <div class="quote">
-            This is an inspiring qoute, or testimonial from a customer. Maybe it's just filling up space, or maybe people
-            will actually read it. Who knows? All I know is that it looks nice.
+    <div class="background-dark background">
+        <div class="content-box hero-box">
+            <div class="hero-left">
+                <div class="hero-main">This website is awesome</div>
+                <div class="hero-secondary">This website has some subtext that goes here under the main title. It's a smaller font and the colour is lower contrast</div>
+                <button id="hero-button">Sign Up</button>
+            </div>
+            <img src="./images/awesome.png" alt="This image is awesome">
         </div>
-        <div class="quote-owner">-Thor, God of Thunder</div>
     </div>
-    <div class="action">
-        <div class="action-text">
-            <div class="big-text">Call to action! It's time!</div>
-            <div class="smol-text">Sign up for our product by clicking that button right over there!</div>
+    <div class="background-white background">
+        <div class="content-box info-box">
+            <div class="info-header">Some random information.</div>
+            <div class="deck">
+                <div class="card">
+                    <img class="info-image" alt="An arrow" src="./images/card1.png">
+                    this is some subtext under an illustration or image
+                </div>
+                <div class="card">
+                    <img class="info-image" alt="An arrow" src="./images/card2.png">
+                    this is some subtext under an illustration or image
+                </div>
+                <div class="card">
+                    <img class="info-image" alt="An arrow" src="./images/card3.png">
+                    this is some subtext under an illustration or image
+                </div>
+                <div class="card">
+                    <img class="info-image" alt="An arrow" src="./images/card4.png">
+                    this is some subtext under an illustration or image
+                </div>
+            </div>
         </div>
-        <button id="action-button">Sign Up</button>
     </div>
-    <div class="footer">
-        Copyright © The Odin Project 2021
-    </div>    
+    <div class="background-light background">
+        <div class="content-box">
+            <div class="testimony-box">
+                <div class="quote">This is an inspiring qoute, or testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice. </div>
+                <div class="quote-owner">-Thor, God of Thunder</div>
+            </div>
+        </div>
+    </div>
+    <div class="background-white background">
+        <div class="content-box action-box">
+            <div class="action-body">
+                <div class="action-header">Call to action! It's time!</div>
+                <div class="action-text">Sign up for our product by clicking that button right over there!</div>
+            </div>
+            <button id="action-button">Sign Up</button>
+        </div>
+    </div>
+    <div class="background background-dark background-footer">
+        <div class="content-box footer-box">Copyright © The Odin Project 2021</div>
+             
+    </div>
 </body>
 </html>
